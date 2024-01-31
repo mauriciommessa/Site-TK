@@ -114,6 +114,13 @@ menu > form > input:hover {
     background-color: white;
 }
 
+#pesquisa {
+    background-color: #FF6600;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
 main {
 
 }
