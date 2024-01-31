@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="estilos/mobile-first.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
-<body>
+<body><!-- -->
     <header>
         <h1>TK2-store<span class="material-symbols-outlined">storefront</span></h1>
         <menu id="itens">
@@ -21,11 +21,50 @@
             </form>
         </menu>
     </header>
-
     <main>
-        <h2>Destaques</h2>
+        <h2>Destaques</h2><br>
+        <div class="slider">
+            <div class="slides">
+                <!-- Radio Buttons -->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!-- Fim Radio Buttons-->
 
-        <h2>Promoções</h2>
+                <!-- Slide Images -->
+                <div class="slide-first">
+                    <img src="imagens/img1.jpeg" alt="Conta 1K">
+                </div>
+                <div class="slide">
+                    <img src="imagens/img2.jpeg" alt="Conta 5K">
+                </div>
+                <div class="slide">
+                    <img src="imagens/img3.jpeg" alt="Conta 10K">
+                </div>
+                <div class="slide">
+                    <img src="imagens/img4.jpeg" alt="Conta 20K">
+                </div>
+                <!-- Fim Slide Images -->
+
+                <!-- Navigation Auto -->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+                <!-- Fima Navigation Auto -->
+            </div>
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+
+        </div>
+        <h2>Promoções</h2><br>
 
         <h2>Mais vendidos</h2>
     </main>
@@ -33,5 +72,8 @@
     <footer>
 
     </footer>
-</body>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="slick/slick.js"></script>
+</body> 
 </html>
