@@ -1,16 +1,5 @@
-let count = 1;
-document.getElementById("radio1").checked = true;
+document.getElementById("botaoComprar").onclick = function() {acao()};
 
-setInterval( function() {
-    nextImage();
-}, 2000)
-
-function nextImage (){
-    count ++ 
-    if(count > 4) {
-        count = 1;
-    }
-
-    document.getElementById("radio" + count).checked = true;
-
+function acao() {
+    alert("Você clicou");
 }

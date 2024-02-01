@@ -40,14 +40,14 @@ PALETA DE CORES / FONTES
 }
 
 body {
-    background-color: #F2F2F2;
+    background-color: #484848;
     height: 100vh;
     width: 100vw;
 }
 
 header {
     display: block;
-    background-color: #000033;
+    background-color: #2f2f2f;
     color: white;
     text-align: center;
 }
@@ -68,17 +68,19 @@ menu {
 menu > ul {
     list-style: none;
     text-align: left;
+    height: 30px;
 }
 
 menu > ul > li{
     display: inline-block;
+    padding: 5px;
 }
 
 menu > ul > li > a{
     font-size: .9em;
-    padding: 10px;
+    padding-top: 10px;
     text-decoration: none;
-    background-color: #FF6600;
+    background-color: none;
     color: white;
     position: relative;
     margin: auto;
@@ -87,144 +89,42 @@ menu > ul > li > a{
 }
 
 menu > ul > li > a:hover {
-    background-color: white;
-    color: #FF6600;
+    background-color: #f2f2f268;
+    color: white;
     font-weight: bold;
     font-size: 1em;
 }
 
-menu > form  {
-    text-align: right;
-    background-color: #FF6600;
-    border-radius: 10px;
-}
-
-menu > form > input {
-    color: white;
-    background-color: #FF6600;
-    width: 195px;
-    height: 29px;
-    font-size: 1.3em;
-    border: none;
-    border-radius: 10px;
-}
-
-menu > form > input:hover {
-    color: #FF6600;
-    background-color: white;
-}
-
-#pesquisa {
-    background-color: #FF6600;
-    border: none;
-    border-radius: 10px;
-    color: white;
-}
-
 main {
-
+    text-align: center;
+    display: block;
+    margin-top: 15px;
 }
 
-.slider {
-    margin: 0 auto;
-    width: 500px;
-    height: 400px;
-    overflow: hidden;
+main > div > p {
+    color: rgb(0, 255, 17);
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
-.slides {
-    width: 400%;
-    height: 345px;
-    display: flex;
-}
-
-.slides input {
-    display: none;
-}
-
-.slide {
-    width: 25%;
-    position: relative;
-}
-
-.slide img {
-    width: 100vw;
-    
-}
-
-.manual-navigation {
-    position: absolute;
-    width: 100vw;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
-}
-
-.manual-btn {
-    border: 2px solid white;
-    padding: 5px;
-    border-radius: 10px;
+main > div > button {
+    margin-top: 45px;
+    background-color: green;
+    padding: 20px 50px;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: large;
+    font-weight: bold;
     cursor: pointer;
-
-    transition: 1s;
 }
 
-.manual-btn:not(:last-child) {
-    margin-right: 40px;
-}
-
-.manual-btn:hover {
+.mil {
     background-color: white;
-}
-
-#radio1:checked ~ .first{
-    margin-left: 0;
-}
-
-#radio2:checked ~ .first{
-    margin-left: -25%;
-}
-
-#radio3:checked ~ .first{
-    margin-left: -50%;
-}
-
-#radio4:checked ~ .first{
-    margin-left: -75%;
-}
-
-.navigation-auto div{
-    border: 2px solid #20a6ff;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.navigation-auto {
-    position: absolute;
-    width: 100vw;
-    margin-top: 305px;
-    display: flex;
-    justify-content: center;
-}
-
-.navigation-auto div:not(:last-child) {
-    margin-right: 40px;
-}
-
-#radio1:checked ~ .navigation-auto .auto-btn1 {
-    background-color: white;
-}
-
-#radio2:checked ~ .navigation-auto .auto-btn2 {
-    background-color: white;
-}
-
-#radio3:checked ~ .navigation-auto .auto-btn3 {
-    background-color: white;
-}
-
-#radio4:checked ~ .navigation-auto .auto-btn4 {
-    background-color: white;
+    border: 2px solid black;
+    display: inline-block;
+    width: 85vw;
+    height: 70vh;
+    border-radius: 7px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.393);
 }
