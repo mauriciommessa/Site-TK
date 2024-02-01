@@ -40,7 +40,7 @@ PALETA DE CORES / FONTES
 }
 
 body {
-    background-color: #F2F2F2;
+    background-color: #ff0000;
     height: 100vh;
     width: 100vw;
 }
@@ -127,7 +127,7 @@ main {
 
 .slider {
     margin: 0 auto;
-    width: 800px;
+    width: 500px;
     height: 400px;
     overflow: hidden;
 }
@@ -148,13 +148,13 @@ main {
 }
 
 .slide img {
-    width: 800px;
+    width: 100vw;
     
 }
 
 .manual-navigation {
     position: absolute;
-    width: 800px;
+    width: 100vw;
     margin-top: -40px;
     display: flex;
     justify-content: center;
@@ -203,7 +203,7 @@ main {
 
 .navigation-auto {
     position: absolute;
-    width: 800px;
+    width: 100vw;
     margin-top: 360px;
     display: flex;
     justify-content: center;
