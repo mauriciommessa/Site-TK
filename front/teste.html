@@ -1,16 +1,12 @@
-import win32com.client as win32
-
-# Criar a integração com o outlook
-outlook = win32.Dispatch('Outlook.Application')
-
-# Criar um email
-email = outlook.CreateItem(0)
-
-# Configurar as informações do seu E-mail
-email.To = "messammauricio@gmail.com"; "stottim.steam@gmail.com"
-email.Subject = "TK2"
-email.HTMLBody = """
-<style>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+    <style>
 
         * {
             margin: 0px;
@@ -75,7 +71,5 @@ email.HTMLBody = """
         <p><br>Fique a vontade para responder em caso de dúvidas</p>
         <p id="atenciosamente"><br><br>Atenciosamente: <a href="#">TK2-store</a></p>
     </main>
-"""
-
-email.Send()
-print("Email enviado")
+</body>
+</html>
