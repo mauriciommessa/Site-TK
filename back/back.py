@@ -1,6 +1,6 @@
 
 import mercadopago
-sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
+sdk = mercadopago.SDK("APP_USR-700432604915264-031414-e83c47742fba8aa6906054e6f3c993d7-136610204")
 
 request_options = mercadopago.config.RequestOptions()
 request_options.custom_headers = {

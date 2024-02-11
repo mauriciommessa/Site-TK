@@ -1,15 +1,9 @@
-document.getElementById("botaoComprar").onclick = function() {acao()};
-
-function acao() {
-    alert("Você clicou");
-}
-
 //PIX
 //importando o mercadopago
 import { loadMercadoPago } from "@mercadopago/sdk-js";
 
 await loadMercadoPago();
-const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
+const mp = new window.MercadoPago("APP_USR-4e8db518-5a35-422d-990a-ca9985c36bcb");
 
 //obtendo tipos de documento
 (async function getIdentificationTypes() {
